@@ -9,20 +9,34 @@
 /* Begin PBXBuildFile section */
 		B110700D27704E5B00D6EAA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110700C27704E5B00D6EAA7 /* AppDelegate.swift */; };
 		B110700F27704E5B00D6EAA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110700E27704E5B00D6EAA7 /* SceneDelegate.swift */; };
-		B110701127704E5B00D6EAA7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110701027704E5B00D6EAA7 /* MainViewController.swift */; };
+		B110701127704E5B00D6EAA7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110701027704E5B00D6EAA7 /* MainVC.swift */; };
 		B110701627704E5F00D6EAA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B110701527704E5F00D6EAA7 /* Assets.xcassets */; };
 		B110701927704E5F00D6EAA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B110701727704E5F00D6EAA7 /* LaunchScreen.storyboard */; };
 		B11070222770503900D6EAA7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B11070212770503900D6EAA7 /* SnapKit */; };
+		B1107025277067DB00D6EAA7 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1107024277067DB00D6EAA7 /* MenuCell.swift */; };
+		B110702727707C6900D6EAA7 /* UICollectionView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110702627707C6900D6EAA7 /* UICollectionView+Utility.swift */; };
+		B1107029277081F400D6EAA7 /* UIView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1107028277081F400D6EAA7 /* UIView+Utility.swift */; };
+		B1107032277095FB00D6EAA7 /* PatientPortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110702E277095FA00D6EAA7 /* PatientPortalViewController.swift */; };
+		B1107033277095FB00D6EAA7 /* HealthTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110702F277095FA00D6EAA7 /* HealthTipsViewController.swift */; };
+		B1107034277095FB00D6EAA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1107030277095FB00D6EAA7 /* ViewController.swift */; };
+		B1107035277095FB00D6EAA7 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1107031277095FB00D6EAA7 /* MyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B110700927704E5B00D6EAA7 /* AnimationKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B110700C27704E5B00D6EAA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B110700E27704E5B00D6EAA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B110701027704E5B00D6EAA7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B110701027704E5B00D6EAA7 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B110701527704E5F00D6EAA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B110701827704E5F00D6EAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B110701A27704E5F00D6EAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1107024277067DB00D6EAA7 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		B110702627707C6900D6EAA7 /* UICollectionView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Utility.swift"; sourceTree = "<group>"; };
+		B1107028277081F400D6EAA7 /* UIView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility.swift"; sourceTree = "<group>"; };
+		B110702E277095FA00D6EAA7 /* PatientPortalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientPortalViewController.swift; sourceTree = "<group>"; };
+		B110702F277095FA00D6EAA7 /* HealthTipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthTipsViewController.swift; sourceTree = "<group>"; };
+		B1107030277095FB00D6EAA7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1107031277095FB00D6EAA7 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,13 +71,68 @@
 			isa = PBXGroup;
 			children = (
 				B110700C27704E5B00D6EAA7 /* AppDelegate.swift */,
-				B110700E27704E5B00D6EAA7 /* SceneDelegate.swift */,
-				B110701027704E5B00D6EAA7 /* MainViewController.swift */,
-				B110701527704E5F00D6EAA7 /* Assets.xcassets */,
-				B110701727704E5F00D6EAA7 /* LaunchScreen.storyboard */,
 				B110701A27704E5F00D6EAA7 /* Info.plist */,
+				B110702A2770955B00D6EAA7 /* Main */,
+				B110702C277095CA00D6EAA7 /* Resources */,
+				B110700E27704E5B00D6EAA7 /* SceneDelegate.swift */,
+				B110702B2770957900D6EAA7 /* Shared */,
 			);
 			path = AnimationKit;
+			sourceTree = "<group>";
+		};
+		B110702A2770955B00D6EAA7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B110702D277095DA00D6EAA7 /* Animate */,
+				B110701027704E5B00D6EAA7 /* MainVC.swift */,
+				B1107024277067DB00D6EAA7 /* MenuCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B110702B2770957900D6EAA7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B110702627707C6900D6EAA7 /* UICollectionView+Utility.swift */,
+				B1107028277081F400D6EAA7 /* UIView+Utility.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B110702C277095CA00D6EAA7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B110701527704E5F00D6EAA7 /* Assets.xcassets */,
+				B110701727704E5F00D6EAA7 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B110702D277095DA00D6EAA7 /* Animate */ = {
+			isa = PBXGroup;
+			children = (
+				B1107037277096A700D6EAA7 /* TableView */,
+				B11070362770969600D6EAA7 /* Header */,
+			);
+			path = Animate;
+			sourceTree = "<group>";
+		};
+		B11070362770969600D6EAA7 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				B110702F277095FA00D6EAA7 /* HealthTipsViewController.swift */,
+				B110702E277095FA00D6EAA7 /* PatientPortalViewController.swift */,
+				B1107030277095FB00D6EAA7 /* ViewController.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		B1107037277096A700D6EAA7 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				B1107031277095FB00D6EAA7 /* MyTableViewController.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +211,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B110701127704E5B00D6EAA7 /* MainViewController.swift in Sources */,
+				B110701127704E5B00D6EAA7 /* MainVC.swift in Sources */,
 				B110700D27704E5B00D6EAA7 /* AppDelegate.swift in Sources */,
+				B1107025277067DB00D6EAA7 /* MenuCell.swift in Sources */,
+				B1107035277095FB00D6EAA7 /* MyTableViewController.swift in Sources */,
+				B1107034277095FB00D6EAA7 /* ViewController.swift in Sources */,
+				B110702727707C6900D6EAA7 /* UICollectionView+Utility.swift in Sources */,
 				B110700F27704E5B00D6EAA7 /* SceneDelegate.swift in Sources */,
+				B1107032277095FB00D6EAA7 /* PatientPortalViewController.swift in Sources */,
+				B1107033277095FB00D6EAA7 /* HealthTipsViewController.swift in Sources */,
+				B1107029277081F400D6EAA7 /* UIView+Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
