@@ -19,7 +19,11 @@
 		B1107032277095FB00D6EAA7 /* PatientPortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110702E277095FA00D6EAA7 /* PatientPortalViewController.swift */; };
 		B1107033277095FB00D6EAA7 /* HealthTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110702F277095FA00D6EAA7 /* HealthTipsViewController.swift */; };
 		B1107034277095FB00D6EAA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1107030277095FB00D6EAA7 /* ViewController.swift */; };
-		B1107035277095FB00D6EAA7 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1107031277095FB00D6EAA7 /* MyTableViewController.swift */; };
+		B1107035277095FB00D6EAA7 /* AnimatedTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1107031277095FB00D6EAA7 /* AnimatedTableVC.swift */; };
+		B110703927709AA600D6EAA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B110703827709AA600D6EAA7 /* Main.storyboard */; };
+		B110703C2770A52600D6EAA7 /* UITableView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110703B2770A52600D6EAA7 /* UITableView+Utility.swift */; };
+		B110703E2770A7DC00D6EAA7 /* TableViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110703D2770A7DC00D6EAA7 /* TableViewAnimation.swift */; };
+		B11070402770A96600D6EAA7 /* TableAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110703F2770A96600D6EAA7 /* TableAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +40,11 @@
 		B110702E277095FA00D6EAA7 /* PatientPortalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientPortalViewController.swift; sourceTree = "<group>"; };
 		B110702F277095FA00D6EAA7 /* HealthTipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthTipsViewController.swift; sourceTree = "<group>"; };
 		B1107030277095FB00D6EAA7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B1107031277095FB00D6EAA7 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		B1107031277095FB00D6EAA7 /* AnimatedTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTableVC.swift; sourceTree = "<group>"; };
+		B110703827709AA600D6EAA7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B110703B2770A52600D6EAA7 /* UITableView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Utility.swift"; sourceTree = "<group>"; };
+		B110703D2770A7DC00D6EAA7 /* TableViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAnimation.swift; sourceTree = "<group>"; };
+		B110703F2770A96600D6EAA7 /* TableAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 			children = (
 				B110700C27704E5B00D6EAA7 /* AppDelegate.swift */,
 				B110701A27704E5F00D6EAA7 /* Info.plist */,
+				B1107037277096A700D6EAA7 /* TableView */,
 				B110702A2770955B00D6EAA7 /* Main */,
 				B110702C277095CA00D6EAA7 /* Resources */,
 				B110700E27704E5B00D6EAA7 /* SceneDelegate.swift */,
@@ -83,9 +92,8 @@
 		B110702A2770955B00D6EAA7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				B110702D277095DA00D6EAA7 /* Animate */,
 				B110701027704E5B00D6EAA7 /* MainVC.swift */,
-				B1107024277067DB00D6EAA7 /* MenuCell.swift */,
+				B110703A27709AD500D6EAA7 /* Cell */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -95,6 +103,9 @@
 			children = (
 				B110702627707C6900D6EAA7 /* UICollectionView+Utility.swift */,
 				B1107028277081F400D6EAA7 /* UIView+Utility.swift */,
+				B110703B2770A52600D6EAA7 /* UITableView+Utility.swift */,
+				B110703D2770A7DC00D6EAA7 /* TableViewAnimation.swift */,
+				B110703F2770A96600D6EAA7 /* TableAnimation.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -102,19 +113,11 @@
 		B110702C277095CA00D6EAA7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B110703827709AA600D6EAA7 /* Main.storyboard */,
 				B110701527704E5F00D6EAA7 /* Assets.xcassets */,
 				B110701727704E5F00D6EAA7 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		B110702D277095DA00D6EAA7 /* Animate */ = {
-			isa = PBXGroup;
-			children = (
-				B1107037277096A700D6EAA7 /* TableView */,
-				B11070362770969600D6EAA7 /* Header */,
-			);
-			path = Animate;
 			sourceTree = "<group>";
 		};
 		B11070362770969600D6EAA7 /* Header */ = {
@@ -130,9 +133,18 @@
 		B1107037277096A700D6EAA7 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				B1107031277095FB00D6EAA7 /* MyTableViewController.swift */,
+				B11070362770969600D6EAA7 /* Header */,
+				B1107031277095FB00D6EAA7 /* AnimatedTableVC.swift */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		B110703A27709AD500D6EAA7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B1107024277067DB00D6EAA7 /* MenuCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B110703927709AA600D6EAA7 /* Main.storyboard in Resources */,
 				B110701927704E5F00D6EAA7 /* LaunchScreen.storyboard in Resources */,
 				B110701627704E5F00D6EAA7 /* Assets.xcassets in Resources */,
 			);
@@ -213,9 +226,12 @@
 			files = (
 				B110701127704E5B00D6EAA7 /* MainVC.swift in Sources */,
 				B110700D27704E5B00D6EAA7 /* AppDelegate.swift in Sources */,
+				B110703E2770A7DC00D6EAA7 /* TableViewAnimation.swift in Sources */,
 				B1107025277067DB00D6EAA7 /* MenuCell.swift in Sources */,
-				B1107035277095FB00D6EAA7 /* MyTableViewController.swift in Sources */,
+				B1107035277095FB00D6EAA7 /* AnimatedTableVC.swift in Sources */,
 				B1107034277095FB00D6EAA7 /* ViewController.swift in Sources */,
+				B110703C2770A52600D6EAA7 /* UITableView+Utility.swift in Sources */,
+				B11070402770A96600D6EAA7 /* TableAnimation.swift in Sources */,
 				B110702727707C6900D6EAA7 /* UICollectionView+Utility.swift in Sources */,
 				B110700F27704E5B00D6EAA7 /* SceneDelegate.swift in Sources */,
 				B1107032277095FB00D6EAA7 /* PatientPortalViewController.swift in Sources */,

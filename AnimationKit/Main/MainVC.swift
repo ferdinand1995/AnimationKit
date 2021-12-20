@@ -21,7 +21,7 @@ class MainVC: UICollectionViewController {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.itemSize = CGSize(width: view.frame.width, height: 700)
-        data.append((type: MainCellType.vertical, data: "Animate TableView Header"))
+        data.append((type: MainCellType.vertical, data: "Animate TableView"))
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -43,6 +43,7 @@ class MainVC: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let verticalCell = data[indexPath.item] as? (type: MainCellType, data: String), verticalCell.type == .vertical {
+            self.navigationController?.pushViewController(AnimatedTableVC(), animated: true)
         }
     }
 }

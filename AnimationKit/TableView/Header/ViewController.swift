@@ -164,8 +164,8 @@ extension ViewController: UITableViewDelegate {
         if indexPath.item % 2 == 0 {
             /*if let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: String(describing: HealthTipsViewController.self)) as? HealthTipsViewController {
                 self.navigationController?.pushViewController(vc, animated: true)
-            }*/
-            self.navigationController?.pushViewController(MyTableViewController(), animated: true)
+            }
+            self.navigationController?.pushViewController(MyTableViewController(), animated: true)*/
         } else {
             if let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: String(describing: PatientPortalViewController.self)) as? PatientPortalViewController {
                 self.navigationController?.pushViewController(vc, animated: true)

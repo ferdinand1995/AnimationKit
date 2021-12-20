@@ -10,7 +10,7 @@ import SnapKit
 
 class MenuCell: UICollectionViewCell {
 
-    var backgroundCardView: UIView = {
+    let backgroundCardView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         return view
@@ -31,14 +31,14 @@ class MenuCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func initCell() {
+    private func initCell() {
         self.contentView.backgroundColor = .clear
         self.contentView.addSubview(backgroundCardView)
         self.backgroundCardView.addSubview(titleLabel)
         initLayout()
     }
 
-    func initLayout() {
+    private func initLayout() {
         backgroundCardView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(16)
             make.left.equalToSuperview().offset(16)
