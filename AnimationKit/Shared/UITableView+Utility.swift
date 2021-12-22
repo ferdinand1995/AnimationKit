@@ -17,7 +17,7 @@ extension UITableView {
 
     /// SwifterSwift: Index of last section in tableView.
     var lastSection: Int? {
-        return numberOfSections > 0 ? numberOfSections - 1 : nil
+        return numberOfSections > 0 ? numberOfSections - 1: nil
     }
 }
 
@@ -55,8 +55,8 @@ extension UITableView {
         UIView.animate(withDuration: 0, animations: {
             self.reloadData()
         }, completion: { _ in
-            completion()
-        })
+                completion()
+            })
     }
 
     /// SwifterSwift: Remove TableFooterView.
@@ -177,5 +177,23 @@ extension UITableView {
         guard indexPath.section < numberOfSections else { return }
         guard indexPath.row < numberOfRows(inSection: indexPath.section) else { return }
         scrollToRow(at: indexPath, at: scrollPosition, animated: animated)
+    }
+
+    func setEmptyMessage(_ message: String) {
+        let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        messageLabel.text = message
+        messageLabel.textColor = .black
+        messageLabel.numberOfLines = 0
+        messageLabel.textAlignment = .center
+        messageLabel.font = UIFont(name: "TrebuchetMS", size: 15)
+        messageLabel.sizeToFit()
+
+        self.backgroundView = messageLabel
+        self.separatorStyle = .none
+    }
+
+    func restore() {
+        self.backgroundView = nil
+        self.separatorStyle = .singleLine
     }
 }

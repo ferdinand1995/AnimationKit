@@ -7,9 +7,13 @@
 
 import UIKit
 
-enum MainCellType {
-    case carousel, vertical
+// MARK: - MainMenuElement
+struct MainMenuElement: Codable {
+    let title: String
+    let type: String
 }
+
+typealias MainMenu = [MainMenuElement]
 
 class MainVC: UICollectionViewController {
 
@@ -18,10 +22,19 @@ class MainVC: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.register(cellWithClass: MenuCell.self)
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        layout.itemSize = CGSize(width: view.frame.width, height: 700)
-        data.append((type: MainCellType.vertical, data: "Animate TableView"))
+        populateMenu()
+    }
+    
+    private func populateMenu() {
+        guard let path = Bundle.main.path(forResource: "main_menu", ofType: "json") else { return }
+        do {
+            let jsonData = try Data(contentsOf: URL(fileURLWithPath: path))
+            if let mainMenu = try? JSONDecoder().decode(MainMenu.self, from: jsonData){
+                data.append(contentsOf: mainMenu)
+            }
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -30,9 +43,9 @@ class MainVC: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        if let verticalCell = data[indexPath.item] as? (type: MainCellType, data: String), verticalCell.type == .vertical {
+        if let verticalCell = data[indexPath.item] as? MainMenuElement, verticalCell.type == "vertical" {
             let cell = collectionView.dequeueReusableCell(withClass: MenuCell.self, for: indexPath)
-            cell.titleLabel.text = verticalCell.data
+            cell.titleLabel.text = verticalCell.title
             cell.layoutIfNeeded()
             cell.backgroundCardView.dropShadowCell()
             return cell
@@ -42,8 +55,16 @@ class MainVC: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let verticalCell = data[indexPath.item] as? (type: MainCellType, data: String), verticalCell.type == .vertical {
-            self.navigationController?.pushViewController(AnimatedTableVC(), animated: true)
+        if let verticalCell = data[indexPath.item] as? MainMenuElement, verticalCell.type == "vertical" {
+            guard let cell = collectionView.cellForItem(at: indexPath) as? MenuCell else { return }
+            cell.backgroundCardView.isUserInteractionEnabled = true
+            cell.backgroundCardView.showAnimation {
+                if verticalCell.title == "To Do" {
+                    self.navigationController?.pushViewController(ToDoVC(), animated: true)
+                } else {
+                    self.navigationController?.pushViewController(AnimatedTableVC(), animated: true)
+                }
+            }
         }
     }
 }

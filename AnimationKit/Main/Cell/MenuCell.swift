@@ -41,15 +41,15 @@ class MenuCell: UICollectionViewCell {
     private func initLayout() {
         backgroundCardView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(16)
-            make.left.equalToSuperview().offset(16)
+            make.leading.equalToSuperview().offset(16)
             make.bottom.equalToSuperview().offset(0)
-            make.right.equalToSuperview().offset(-16)
+            make.trailing.equalToSuperview().offset(-16)
         }
         titleLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(8)
-            make.left.equalToSuperview().offset(8)
+            make.leading.equalToSuperview().offset(8)
             make.bottom.equalToSuperview().offset(-8)
-            make.right.equalToSuperview().offset(-8)
+            make.trailing.equalToSuperview().offset(-8)
         }
     }
 }

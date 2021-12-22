@@ -26,10 +26,6 @@
 		B11070402770A96600D6EAA7 /* TableAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110703F2770A96600D6EAA7 /* TableAnimation.swift */; };
 		B11070422771BE4300D6EAA7 /* main_menu.json in Resources */ = {isa = PBXBuildFile; fileRef = B11070412771BE4300D6EAA7 /* main_menu.json */; };
 		B1F8F3672771C20A005245F3 /* ToDoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F3662771C20A005245F3 /* ToDoVC.swift */; };
-		B1F8F369277335F8005245F3 /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F368277335F8005245F3 /* ToDoView.swift */; };
-		B1F8F36B27733D77005245F3 /* ToDoEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F36A27733D77005245F3 /* ToDoEmptyView.swift */; };
-		B1F8F36D27734704005245F3 /* TodoVC+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F36C27734704005245F3 /* TodoVC+UITableView.swift */; };
-		B1F8F36F2773487C005245F3 /* ChainedAnimationsQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F36E2773487C005245F3 /* ChainedAnimationsQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,10 +49,6 @@
 		B110703F2770A96600D6EAA7 /* TableAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAnimation.swift; sourceTree = "<group>"; };
 		B11070412771BE4300D6EAA7 /* main_menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = main_menu.json; sourceTree = "<group>"; };
 		B1F8F3662771C20A005245F3 /* ToDoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoVC.swift; sourceTree = "<group>"; };
-		B1F8F368277335F8005245F3 /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
-		B1F8F36A27733D77005245F3 /* ToDoEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoEmptyView.swift; sourceTree = "<group>"; };
-		B1F8F36C27734704005245F3 /* TodoVC+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoVC+UITableView.swift"; sourceTree = "<group>"; };
-		B1F8F36E2773487C005245F3 /* ChainedAnimationsQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainedAnimationsQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +111,6 @@
 				B110703B2770A52600D6EAA7 /* UITableView+Utility.swift */,
 				B110703D2770A7DC00D6EAA7 /* TableViewAnimation.swift */,
 				B110703F2770A96600D6EAA7 /* TableAnimation.swift */,
-				B1F8F36E2773487C005245F3 /* ChainedAnimationsQueue.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -166,9 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				B1F8F3662771C20A005245F3 /* ToDoVC.swift */,
-				B1F8F368277335F8005245F3 /* ToDoView.swift */,
-				B1F8F36A27733D77005245F3 /* ToDoEmptyView.swift */,
-				B1F8F36C27734704005245F3 /* TodoVC+UITableView.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -252,9 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B110701127704E5B00D6EAA7 /* MainVC.swift in Sources */,
-				B1F8F36F2773487C005245F3 /* ChainedAnimationsQueue.swift in Sources */,
 				B110700D27704E5B00D6EAA7 /* AppDelegate.swift in Sources */,
-				B1F8F36D27734704005245F3 /* TodoVC+UITableView.swift in Sources */,
 				B110703E2770A7DC00D6EAA7 /* TableViewAnimation.swift in Sources */,
 				B1107025277067DB00D6EAA7 /* MenuCell.swift in Sources */,
 				B1F8F3672771C20A005245F3 /* ToDoVC.swift in Sources */,
@@ -265,9 +251,7 @@
 				B110702727707C6900D6EAA7 /* UICollectionView+Utility.swift in Sources */,
 				B110700F27704E5B00D6EAA7 /* SceneDelegate.swift in Sources */,
 				B1107032277095FB00D6EAA7 /* PatientPortalViewController.swift in Sources */,
-				B1F8F369277335F8005245F3 /* ToDoView.swift in Sources */,
 				B1107033277095FB00D6EAA7 /* HealthTipsViewController.swift in Sources */,
-				B1F8F36B27733D77005245F3 /* ToDoEmptyView.swift in Sources */,
 				B1107029277081F400D6EAA7 /* UIView+Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +305,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -342,14 +325,6 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"-Xlinker",
-					"-interposable",
-					"-Xlinker",
-					"-undefined",
-					"-Xlinker",
-					dynamic_lookup,
-				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -419,7 +394,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WJ47UB4V33;
-				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AnimationKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -431,14 +405,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-Xlinker",
-					"-interposable",
-					"-Xlinker",
-					"-undefined",
-					"-Xlinker",
-					dynamic_lookup,
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = faro.animation.kit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

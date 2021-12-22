@@ -13,11 +13,13 @@ class AnimatedTableVC: UITableViewController {
 
     var colors = [UIColor.systemRed, UIColor.systemGreen, UIColor.systemBlue, UIColor.systemOrange, UIColor.systemYellow, UIColor.systemPink, UIColor.systemPurple, UIColor.systemTeal, UIColor.systemIndigo, UIColor.systemBrown, UIColor.systemMint, UIColor.systemCyan, UIColor.systemGray, UIColor.systemGray2, UIColor.systemGray3, UIColor.systemGray4, UIColor.systemGray5, UIColor.systemGray6]
 
+    var animationsQueue = ChainedAnimationsQueue()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(cellWithClass: TableViewCell.self)
         tableView.separatorStyle = .none
-        
+
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Insert", style: .plain, target: self, action: #selector(insert(_:)))
         /*
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Batch Insert", style: .plain, target: self, action: #selector(insertBatch(_:)))*/
@@ -50,17 +52,16 @@ class AnimatedTableVC: UITableViewController {
         
         tableView.insertRows(at: [insertionIndexPath], with: .middle)*/
     }
-/*
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let currentTableAnimation: TableAnimation = .fadeIn(duration: 0.6, delay: 0)
-        let animation = currentTableAnimation.getAnimation()
-        let animator = TableViewAnimation(animation: animation)
-        animator.animate(cell: cell, at: indexPath, in: tableView)
-    }
 
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 64
-    }*/
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.alpha = 0.0
+        animationsQueue.queue(withDuration: 0.3, initializations: {
+            cell.layer.transform = CATransform3DTranslate(CATransform3DIdentity, cell.frame.size.width, 0, 0)
+        }, animations: {
+                cell.alpha = 1.0
+                cell.layer.transform = CATransform3DIdentity
+            })
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return colors.count
@@ -69,50 +70,10 @@ class AnimatedTableVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withClass: TableViewCell.self, for: indexPath)
         cell.backgroundCardView.backgroundColor = colors[indexPath.row]
-//        cell.layoutIfNeeded()
-//        cell.backgroundCardView.dropShadowCell()
         return cell
     }
-    /*
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return tableView.dequeueReusableHeaderFooterView(withIdentifier: "headerId")
-    }*/
-    /*
-    func deleteCell(_ cell: UITableViewCell) {
-        if let deletionIndexPath = tableView.indexPath(for: cell) {
-            items.remove(at: deletionIndexPath.row)
-            tableView.deleteRows(at: [deletionIndexPath], with: .automatic)
-        }
-    }*/
 
 }
-/*
-class Header: UITableViewHeaderFooterView {
-    
-    override init(reuseIdentifier: String?) {
-        super.init(reuseIdentifier: reuseIdentifier)
-        setupViews()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    let nameLabel: UILabel = {
-        let label = UILabel()
-        label.text = "My Header"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.boldSystemFont(ofSize: 14)
-        return label
-    }()
-    
-    func setupViews() {
-        addSubview(nameLabel)
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-16-[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": nameLabel]))
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": nameLabel]))
-        
-    }
-}*/
 
 class TableViewCell: UITableViewCell {
 

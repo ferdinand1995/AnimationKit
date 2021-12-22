@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Table View",
+    "type": "vertical"
+  },
+  {
+    "title": "To Do",
+    "type": "vertical"
+  }
+]
