@@ -19,21 +19,28 @@ class ToDoVC: UIViewController {
     var toDoEmptyView: ToDoEmptyView?
     var toDoData = [Task]()
     
+    // MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         initView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    // MARK: Initialize
     private func initView() {
         toDoView = ToDoView(frame: self.view.frame)
         toDoView?.tableview.delegate = self
         toDoView?.tableview.dataSource = self
         self.view.addSubview(toDoView ?? UIView())
-        toDoView?.addButton.addTarget(self, action: #selector(addTask(_:)), for: .touchUpInside)
-    }
-    
-    @objc func addTask(_ sender: UIButton) {
-        
-    }
+    }    
 }
