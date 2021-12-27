@@ -17,7 +17,6 @@
 		B110702727707C6900D6EAA7 /* UICollectionView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110702627707C6900D6EAA7 /* UICollectionView+Utility.swift */; };
 		B1107029277081F400D6EAA7 /* UIView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1107028277081F400D6EAA7 /* UIView+Utility.swift */; };
 		B1107032277095FB00D6EAA7 /* PatientPortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110702E277095FA00D6EAA7 /* PatientPortalViewController.swift */; };
-		B1107033277095FB00D6EAA7 /* HealthTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110702F277095FA00D6EAA7 /* HealthTipsViewController.swift */; };
 		B1107034277095FB00D6EAA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1107030277095FB00D6EAA7 /* ViewController.swift */; };
 		B1107035277095FB00D6EAA7 /* AnimatedTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1107031277095FB00D6EAA7 /* AnimatedTableVC.swift */; };
 		B110703927709AA600D6EAA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B110703827709AA600D6EAA7 /* Main.storyboard */; };
@@ -25,6 +24,7 @@
 		B110703E2770A7DC00D6EAA7 /* TableViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110703D2770A7DC00D6EAA7 /* TableViewAnimation.swift */; };
 		B11070402770A96600D6EAA7 /* TableAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110703F2770A96600D6EAA7 /* TableAnimation.swift */; };
 		B11070422771BE4300D6EAA7 /* main_menu.json in Resources */ = {isa = PBXBuildFile; fileRef = B11070412771BE4300D6EAA7 /* main_menu.json */; };
+		B15BA5332779EFAB00F48292 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B15BA5322779EFAB00F48292 /* Moya */; };
 		B1F8F3672771C20A005245F3 /* ToDoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F3662771C20A005245F3 /* ToDoVC.swift */; };
 		B1F8F369277335F8005245F3 /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F368277335F8005245F3 /* ToDoView.swift */; };
 		B1F8F36B27733D77005245F3 /* ToDoEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F36A27733D77005245F3 /* ToDoEmptyView.swift */; };
@@ -44,7 +44,6 @@
 		B110702627707C6900D6EAA7 /* UICollectionView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Utility.swift"; sourceTree = "<group>"; };
 		B1107028277081F400D6EAA7 /* UIView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility.swift"; sourceTree = "<group>"; };
 		B110702E277095FA00D6EAA7 /* PatientPortalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientPortalViewController.swift; sourceTree = "<group>"; };
-		B110702F277095FA00D6EAA7 /* HealthTipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthTipsViewController.swift; sourceTree = "<group>"; };
 		B1107030277095FB00D6EAA7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B1107031277095FB00D6EAA7 /* AnimatedTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTableVC.swift; sourceTree = "<group>"; };
 		B110703827709AA600D6EAA7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15BA5332779EFAB00F48292 /* Moya in Frameworks */,
 				B11070222770503900D6EAA7 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +138,6 @@
 		B11070362770969600D6EAA7 /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				B110702F277095FA00D6EAA7 /* HealthTipsViewController.swift */,
 				B110702E277095FA00D6EAA7 /* PatientPortalViewController.swift */,
 				B1107030277095FB00D6EAA7 /* ViewController.swift */,
 			);
@@ -191,6 +190,7 @@
 			name = AnimationKit;
 			packageProductDependencies = (
 				B11070212770503900D6EAA7 /* SnapKit */,
+				B15BA5322779EFAB00F48292 /* Moya */,
 			);
 			productName = AnimationKit;
 			productReference = B110700927704E5B00D6EAA7 /* AnimationKit.app */;
@@ -222,6 +222,7 @@
 			mainGroup = B110700027704E5B00D6EAA7;
 			packageReferences = (
 				B11070202770503900D6EAA7 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				B15BA5312779EFAB00F48292 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = B110700A27704E5B00D6EAA7 /* Products */;
 			projectDirPath = "";
@@ -266,7 +267,6 @@
 				B110700F27704E5B00D6EAA7 /* SceneDelegate.swift in Sources */,
 				B1107032277095FB00D6EAA7 /* PatientPortalViewController.swift in Sources */,
 				B1F8F369277335F8005245F3 /* ToDoView.swift in Sources */,
-				B1107033277095FB00D6EAA7 /* HealthTipsViewController.swift in Sources */,
 				B1F8F36B27733D77005245F3 /* ToDoEmptyView.swift in Sources */,
 				B1107029277081F400D6EAA7 /* UIView+Utility.swift in Sources */,
 			);
@@ -506,6 +506,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		B15BA5312779EFAB00F48292 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -513,6 +521,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B11070202770503900D6EAA7 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		B15BA5322779EFAB00F48292 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B15BA5312779EFAB00F48292 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

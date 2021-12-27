@@ -11,6 +11,8 @@ import SnapKit
 class ToDoView: UIView {
     
     var titleFontSize: CGFloat = 32
+    var heightNavigationView: Constraint?
+    var navigationImageViewBottom: Constraint?
     
     let backgroundImageView: UIImageView = {
         let imageView = UIImageView()
@@ -33,7 +35,7 @@ class ToDoView: UIView {
     let calendarImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(systemName: "calendar")
-        imageView.tintColor = .lightGray
+        imageView.tintColor = .white
         return imageView
     }()
     
@@ -44,7 +46,7 @@ class ToDoView: UIView {
         return label
     }()
 
-    let tableview: UITableView = {
+    let tableView: UITableView = {
         let tableView = UITableView()
         tableView.separatorStyle = .none
         return tableView
@@ -68,10 +70,10 @@ class ToDoView: UIView {
         addSubview(backgroundImageView)
         addSubview(navigationImageView)
         addSubview(navigationView)
-//        navigationView.addSubview(calendarImageView)
+        navigationView.addSubview(calendarImageView)
         navigationView.addSubview(titleLabel)
         titleLabel.font = UIFont.boldSystemFont(ofSize: titleFontSize)
-        addSubview(tableview)
+        addSubview(tableView)
         initLayout()
     }
     
@@ -86,23 +88,30 @@ class ToDoView: UIView {
             make.top.equalToSuperview()
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview()
+            self.navigationImageViewBottom = make.bottom.equalTo(titleLabel.snp.top).constraint
         }
         
         navigationView.snp.makeConstraints { (make) -> Void in
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview()
+            self.heightNavigationView = make.height.equalTo(56).constraint
             make.top.equalTo(self.safeAreaLayoutGuide.snp.top)
+        }
+        
+        calendarImageView.snp.makeConstraints { make in
+            make.trailing.equalToSuperview().offset(-16)
+            make.centerY.equalTo(titleLabel.snp.centerY)
+            make.width.height.equalTo(24)
         }
         
         titleLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(16)
             make.trailing.equalToSuperview().offset(-16)
-            make.top.equalTo(navigationImageView.snp.bottom)
             make.top.greaterThanOrEqualToSuperview().offset(16)
             make.bottom.greaterThanOrEqualToSuperview().offset(-16)
         }
         
-        tableview.snp.makeConstraints { make in
+        tableView.snp.makeConstraints { make in
             make.top.equalTo(self.navigationView.snp.bottom)
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview()
