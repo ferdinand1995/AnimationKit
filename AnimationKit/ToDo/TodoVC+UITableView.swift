@@ -68,4 +68,8 @@ extension ToDoVC: UITableViewDataSource, UITableViewDelegate {
         cell.textLabel?.text = "Hello World cell: \(indexPath.row)"
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

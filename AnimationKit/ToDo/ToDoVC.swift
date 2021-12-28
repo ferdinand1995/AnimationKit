@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-struct Task: Codable {
+struct TaskTodo: Codable {
     let titleTask: String
     let subtitleTask: String
 }
@@ -21,7 +21,7 @@ class ToDoVC: UIViewController {
     let maxHeaderHeight: CGFloat = 192 - UIApplication.topSafeAreaHeight
     let minHeaderHeight: CGFloat = 56.0
     var previousScrollOffset: CGFloat = 0.0
-    var toDoData = [Task]()
+//    var toDoData = [Task]()
     
     // MARK: LifeCycle
     override func viewDidLoad() {
