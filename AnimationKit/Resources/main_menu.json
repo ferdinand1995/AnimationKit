@@ -6,5 +6,9 @@
   {
     "title": "To Do",
     "type": "vertical"
+  },
+  {
+    "title": "Hacker News",
+    "type": "vertical"
   }
 ]

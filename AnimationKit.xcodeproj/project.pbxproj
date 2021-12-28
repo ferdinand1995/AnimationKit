@@ -17,14 +17,14 @@
 		B110702727707C6900D6EAA7 /* UICollectionView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110702627707C6900D6EAA7 /* UICollectionView+Utility.swift */; };
 		B1107029277081F400D6EAA7 /* UIView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1107028277081F400D6EAA7 /* UIView+Utility.swift */; };
 		B1107032277095FB00D6EAA7 /* PatientPortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110702E277095FA00D6EAA7 /* PatientPortalViewController.swift */; };
-		B1107034277095FB00D6EAA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1107030277095FB00D6EAA7 /* ViewController.swift */; };
+		B1107034277095FB00D6EAA7 /* HackerNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1107030277095FB00D6EAA7 /* HackerNewsVC.swift */; };
 		B1107035277095FB00D6EAA7 /* AnimatedTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1107031277095FB00D6EAA7 /* AnimatedTableVC.swift */; };
 		B110703927709AA600D6EAA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B110703827709AA600D6EAA7 /* Main.storyboard */; };
 		B110703C2770A52600D6EAA7 /* UITableView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110703B2770A52600D6EAA7 /* UITableView+Utility.swift */; };
 		B110703E2770A7DC00D6EAA7 /* TableViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110703D2770A7DC00D6EAA7 /* TableViewAnimation.swift */; };
 		B11070402770A96600D6EAA7 /* TableAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B110703F2770A96600D6EAA7 /* TableAnimation.swift */; };
 		B11070422771BE4300D6EAA7 /* main_menu.json in Resources */ = {isa = PBXBuildFile; fileRef = B11070412771BE4300D6EAA7 /* main_menu.json */; };
-		B15BA5332779EFAB00F48292 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B15BA5322779EFAB00F48292 /* Moya */; };
+		B15BA536277ACFFD00F48292 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15BA535277ACFFD00F48292 /* UIColor+Utility.swift */; };
 		B1F8F3672771C20A005245F3 /* ToDoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F3662771C20A005245F3 /* ToDoVC.swift */; };
 		B1F8F369277335F8005245F3 /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F368277335F8005245F3 /* ToDoView.swift */; };
 		B1F8F36B27733D77005245F3 /* ToDoEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F36A27733D77005245F3 /* ToDoEmptyView.swift */; };
@@ -44,13 +44,14 @@
 		B110702627707C6900D6EAA7 /* UICollectionView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Utility.swift"; sourceTree = "<group>"; };
 		B1107028277081F400D6EAA7 /* UIView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility.swift"; sourceTree = "<group>"; };
 		B110702E277095FA00D6EAA7 /* PatientPortalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientPortalViewController.swift; sourceTree = "<group>"; };
-		B1107030277095FB00D6EAA7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1107030277095FB00D6EAA7 /* HackerNewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackerNewsVC.swift; sourceTree = "<group>"; };
 		B1107031277095FB00D6EAA7 /* AnimatedTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTableVC.swift; sourceTree = "<group>"; };
 		B110703827709AA600D6EAA7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B110703B2770A52600D6EAA7 /* UITableView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Utility.swift"; sourceTree = "<group>"; };
 		B110703D2770A7DC00D6EAA7 /* TableViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAnimation.swift; sourceTree = "<group>"; };
 		B110703F2770A96600D6EAA7 /* TableAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAnimation.swift; sourceTree = "<group>"; };
 		B11070412771BE4300D6EAA7 /* main_menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = main_menu.json; sourceTree = "<group>"; };
+		B15BA535277ACFFD00F48292 /* UIColor+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utility.swift"; sourceTree = "<group>"; };
 		B1F8F3662771C20A005245F3 /* ToDoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoVC.swift; sourceTree = "<group>"; };
 		B1F8F368277335F8005245F3 /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
 		B1F8F36A27733D77005245F3 /* ToDoEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoEmptyView.swift; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B15BA5332779EFAB00F48292 /* Moya in Frameworks */,
 				B11070222770503900D6EAA7 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,8 +92,9 @@
 			children = (
 				B110700C27704E5B00D6EAA7 /* AppDelegate.swift */,
 				B110701A27704E5F00D6EAA7 /* Info.plist */,
+				B15BA534277ACD5D00F48292 /* HackerNews */,
 				B11070432771C1B700D6EAA7 /* ToDo */,
-				B1107037277096A700D6EAA7 /* TableView */,
+				B1107037277096A700D6EAA7 /* AnimatedTableView */,
 				B110702A2770955B00D6EAA7 /* Main */,
 				B110702C277095CA00D6EAA7 /* Resources */,
 				B110700E27704E5B00D6EAA7 /* SceneDelegate.swift */,
@@ -120,6 +121,7 @@
 				B110703D2770A7DC00D6EAA7 /* TableViewAnimation.swift */,
 				B110703F2770A96600D6EAA7 /* TableAnimation.swift */,
 				B1F8F36E2773487C005245F3 /* ChainedAnimationsQueue.swift */,
+				B15BA535277ACFFD00F48292 /* UIColor+Utility.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -139,18 +141,17 @@
 			isa = PBXGroup;
 			children = (
 				B110702E277095FA00D6EAA7 /* PatientPortalViewController.swift */,
-				B1107030277095FB00D6EAA7 /* ViewController.swift */,
 			);
 			path = Header;
 			sourceTree = "<group>";
 		};
-		B1107037277096A700D6EAA7 /* TableView */ = {
+		B1107037277096A700D6EAA7 /* AnimatedTableView */ = {
 			isa = PBXGroup;
 			children = (
 				B11070362770969600D6EAA7 /* Header */,
 				B1107031277095FB00D6EAA7 /* AnimatedTableVC.swift */,
 			);
-			path = TableView;
+			path = AnimatedTableView;
 			sourceTree = "<group>";
 		};
 		B110703A27709AD500D6EAA7 /* Cell */ = {
@@ -172,6 +173,14 @@
 			path = ToDo;
 			sourceTree = "<group>";
 		};
+		B15BA534277ACD5D00F48292 /* HackerNews */ = {
+			isa = PBXGroup;
+			children = (
+				B1107030277095FB00D6EAA7 /* HackerNewsVC.swift */,
+			);
+			path = HackerNews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,7 +199,6 @@
 			name = AnimationKit;
 			packageProductDependencies = (
 				B11070212770503900D6EAA7 /* SnapKit */,
-				B15BA5322779EFAB00F48292 /* Moya */,
 			);
 			productName = AnimationKit;
 			productReference = B110700927704E5B00D6EAA7 /* AnimationKit.app */;
@@ -222,7 +230,6 @@
 			mainGroup = B110700027704E5B00D6EAA7;
 			packageReferences = (
 				B11070202770503900D6EAA7 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				B15BA5312779EFAB00F48292 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = B110700A27704E5B00D6EAA7 /* Products */;
 			projectDirPath = "";
@@ -254,13 +261,14 @@
 			files = (
 				B110701127704E5B00D6EAA7 /* MainVC.swift in Sources */,
 				B1F8F36F2773487C005245F3 /* ChainedAnimationsQueue.swift in Sources */,
+				B15BA536277ACFFD00F48292 /* UIColor+Utility.swift in Sources */,
 				B110700D27704E5B00D6EAA7 /* AppDelegate.swift in Sources */,
 				B1F8F36D27734704005245F3 /* TodoVC+UITableView.swift in Sources */,
 				B110703E2770A7DC00D6EAA7 /* TableViewAnimation.swift in Sources */,
 				B1107025277067DB00D6EAA7 /* MenuCell.swift in Sources */,
 				B1F8F3672771C20A005245F3 /* ToDoVC.swift in Sources */,
 				B1107035277095FB00D6EAA7 /* AnimatedTableVC.swift in Sources */,
-				B1107034277095FB00D6EAA7 /* ViewController.swift in Sources */,
+				B1107034277095FB00D6EAA7 /* HackerNewsVC.swift in Sources */,
 				B110703C2770A52600D6EAA7 /* UITableView+Utility.swift in Sources */,
 				B11070402770A96600D6EAA7 /* TableAnimation.swift in Sources */,
 				B110702727707C6900D6EAA7 /* UICollectionView+Utility.swift in Sources */,
@@ -353,6 +361,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -407,6 +416,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -506,14 +516,6 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		B15BA5312779EFAB00F48292 /* XCRemoteSwiftPackageReference "Moya" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 15.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -521,11 +523,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B11070202770503900D6EAA7 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		B15BA5322779EFAB00F48292 /* Moya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B15BA5312779EFAB00F48292 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

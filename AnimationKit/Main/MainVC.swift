@@ -61,6 +61,8 @@ class MainVC: UICollectionViewController {
             cell.backgroundCardView.showAnimation {
                 if verticalCell.title == "To Do" {
                     self.navigationController?.pushViewController(ToDoVC(), animated: true)
+                } else if verticalCell.title == "Hacker News" {
+                    self.navigationController?.pushViewController(HackerNewsVC(), animated: true)
                 } else {
                     self.navigationController?.pushViewController(AnimatedTableVC(), animated: true)
                 }

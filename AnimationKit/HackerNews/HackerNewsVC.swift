@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HackerNewsVC: UIViewController {
 
     // MARK: IBOutlets
     @IBOutlet private weak var tableView: UITableView!
