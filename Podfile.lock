@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (5.5.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - SnapKit (5.0.1)
+  - XCoordinator (2.0.7):
+    - XCoordinator/Core (= 2.0.7)
+  - XCoordinator/Core (2.0.7)
+
+DEPENDENCIES:
+  - Moya (~> 15.0)
+  - SnapKit (~> 5.0.0)
+  - XCoordinator (~> 2.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - SnapKit
+    - XCoordinator
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  XCoordinator: 9ee654fedef1ffede33d5c11677708a555c00542
+
+PODFILE CHECKSUM: cf213d51432a6ca3ba19bedc35a7b6f59e4202ce
+
+COCOAPODS: 1.11.2
