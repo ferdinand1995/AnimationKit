@@ -58,7 +58,9 @@ extension UIView {
 
     func addShadow(shadowColor: UIColor, offSet: CGSize, opacity: Float, shadowRadius: CGFloat, cornerRadius: CGFloat, corners: UIRectCorner, fillColor: UIColor = .white) {
 
+        self.layer.sublayers?.filter{ $0.name == "maskLayer" }.forEach{ $0.removeFromSuperlayer() }
         let shadowLayer = CAShapeLayer()
+        shadowLayer.name = "maskLayer"
         let size = CGSize(width: cornerRadius, height: cornerRadius)
         let cgPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: size).cgPath //1
         shadowLayer.path = cgPath //2

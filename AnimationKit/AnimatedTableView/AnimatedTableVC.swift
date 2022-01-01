@@ -54,6 +54,10 @@ class AnimatedTableVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let cell = cell as? TableViewCell else { return }
+//        DispatchQueue.main.async {
+//            cell.backgroundCardView.addShadow(shadowColor: .black, offSet: CGSize(width: 0, height: 3), opacity: 0.6, shadowRadius: 5.0, cornerRadius: 8, corners: [.allCorners], fillColor: self.colors[indexPath.row])
+//        }
         cell.alpha = 0.0
         animationsQueue.queue(withDuration: 0.3, initializations: {
             cell.layer.transform = CATransform3DTranslate(CATransform3DIdentity, cell.frame.size.width, 0, 0)
@@ -69,7 +73,9 @@ class AnimatedTableVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withClass: TableViewCell.self, for: indexPath)
-        cell.backgroundCardView.backgroundColor = colors[indexPath.row]
+        DispatchQueue.main.async {
+            cell.backgroundCardView.addShadow(shadowColor: .black, offSet: CGSize(width: 0, height: 3), opacity: 0.6, shadowRadius: 5.0, cornerRadius: 8, corners: [.allCorners], fillColor: self.colors[indexPath.row])
+        }
         return cell
     }
 
@@ -101,7 +107,7 @@ class TableViewCell: UITableViewCell {
         self.contentView.backgroundColor = .clear
         self.contentView.addSubview(backgroundCardView)
         backgroundCardView.addSubview(label)
-        backgroundCardView.layer.cornerRadius = 8
+//        backgroundCardView.layer.cornerRadius = 8
         initLayout()
     }
 

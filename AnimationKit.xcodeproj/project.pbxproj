@@ -26,10 +26,14 @@
 		B11B0B55277B02B500BF1D37 /* HackerNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11B0B54277B02B400BF1D37 /* HackerNewsView.swift */; };
 		B11B0B57277B07C200BF1D37 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11B0B56277B07C200BF1D37 /* News.swift */; };
 		B15BA536277ACFFD00F48292 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15BA535277ACFFD00F48292 /* UIColor+Utility.swift */; };
+		B1F0A815277F37230009AE45 /* UIWindow+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F0A814277F37230009AE45 /* UIWindow+Utility.swift */; };
+		B1F0A817277F39900009AE45 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F0A816277F39900009AE45 /* ToDoCell.swift */; };
+		B1F0A819277F3F210009AE45 /* Date+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F0A818277F3F210009AE45 /* Date+Utility.swift */; };
+		B1F0A81C277F53670009AE45 /* ToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1F0A81A277F53670009AE45 /* ToDo.xcdatamodeld */; };
 		B1F8F3672771C20A005245F3 /* ToDoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F3662771C20A005245F3 /* ToDoVC.swift */; };
 		B1F8F369277335F8005245F3 /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F368277335F8005245F3 /* ToDoView.swift */; };
 		B1F8F36B27733D77005245F3 /* ToDoEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F36A27733D77005245F3 /* ToDoEmptyView.swift */; };
-		B1F8F36D27734704005245F3 /* TodoVC+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F36C27734704005245F3 /* TodoVC+UITableView.swift */; };
+		B1F8F36D27734704005245F3 /* ToDoVC+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F36C27734704005245F3 /* ToDoVC+UITableView.swift */; };
 		B1F8F36F2773487C005245F3 /* ChainedAnimationsQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F8F36E2773487C005245F3 /* ChainedAnimationsQueue.swift */; };
 		F66F3AB15015FC42C2BC9D49 /* Pods_AnimationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E13DCA336F2032DB77D334E /* Pods_AnimationKit.framework */; };
 /* End PBXBuildFile section */
@@ -59,10 +63,14 @@
 		B11B0B54277B02B400BF1D37 /* HackerNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsView.swift; sourceTree = "<group>"; };
 		B11B0B56277B07C200BF1D37 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		B15BA535277ACFFD00F48292 /* UIColor+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utility.swift"; sourceTree = "<group>"; };
+		B1F0A814277F37230009AE45 /* UIWindow+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Utility.swift"; sourceTree = "<group>"; };
+		B1F0A816277F39900009AE45 /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		B1F0A818277F3F210009AE45 /* Date+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utility.swift"; sourceTree = "<group>"; };
+		B1F0A81B277F53670009AE45 /* ToDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDo.xcdatamodel; sourceTree = "<group>"; };
 		B1F8F3662771C20A005245F3 /* ToDoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoVC.swift; sourceTree = "<group>"; };
 		B1F8F368277335F8005245F3 /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
 		B1F8F36A27733D77005245F3 /* ToDoEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoEmptyView.swift; sourceTree = "<group>"; };
-		B1F8F36C27734704005245F3 /* TodoVC+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoVC+UITableView.swift"; sourceTree = "<group>"; };
+		B1F8F36C27734704005245F3 /* ToDoVC+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoVC+UITableView.swift"; sourceTree = "<group>"; };
 		B1F8F36E2773487C005245F3 /* ChainedAnimationsQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainedAnimationsQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +156,8 @@
 				B110703F2770A96600D6EAA7 /* TableAnimation.swift */,
 				B1F8F36E2773487C005245F3 /* ChainedAnimationsQueue.swift */,
 				B15BA535277ACFFD00F48292 /* UIColor+Utility.swift */,
+				B1F0A814277F37230009AE45 /* UIWindow+Utility.swift */,
+				B1F0A818277F3F210009AE45 /* Date+Utility.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -194,7 +204,9 @@
 				B1F8F3662771C20A005245F3 /* ToDoVC.swift */,
 				B1F8F368277335F8005245F3 /* ToDoView.swift */,
 				B1F8F36A27733D77005245F3 /* ToDoEmptyView.swift */,
-				B1F8F36C27734704005245F3 /* TodoVC+UITableView.swift */,
+				B1F8F36C27734704005245F3 /* ToDoVC+UITableView.swift */,
+				B1F0A816277F39900009AE45 /* ToDoCell.swift */,
+				B1F0A81A277F53670009AE45 /* ToDo.xcdatamodeld */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -332,10 +344,13 @@
 				B110701127704E5B00D6EAA7 /* MainVC.swift in Sources */,
 				B1F8F36F2773487C005245F3 /* ChainedAnimationsQueue.swift in Sources */,
 				B15BA536277ACFFD00F48292 /* UIColor+Utility.swift in Sources */,
+				B1F0A819277F3F210009AE45 /* Date+Utility.swift in Sources */,
 				B110700D27704E5B00D6EAA7 /* AppDelegate.swift in Sources */,
 				B11B0B55277B02B500BF1D37 /* HackerNewsView.swift in Sources */,
-				B1F8F36D27734704005245F3 /* TodoVC+UITableView.swift in Sources */,
+				B1F8F36D27734704005245F3 /* ToDoVC+UITableView.swift in Sources */,
+				B1F0A81C277F53670009AE45 /* ToDo.xcdatamodeld in Sources */,
 				B110703E2770A7DC00D6EAA7 /* TableViewAnimation.swift in Sources */,
+				B1F0A815277F37230009AE45 /* UIWindow+Utility.swift in Sources */,
 				B1107025277067DB00D6EAA7 /* MenuCell.swift in Sources */,
 				B1F8F3672771C20A005245F3 /* ToDoVC.swift in Sources */,
 				B1107035277095FB00D6EAA7 /* AnimatedTableVC.swift in Sources */,
@@ -343,6 +358,7 @@
 				B110703C2770A52600D6EAA7 /* UITableView+Utility.swift in Sources */,
 				B11070402770A96600D6EAA7 /* TableAnimation.swift in Sources */,
 				B110702727707C6900D6EAA7 /* UICollectionView+Utility.swift in Sources */,
+				B1F0A817277F39900009AE45 /* ToDoCell.swift in Sources */,
 				B110700F27704E5B00D6EAA7 /* SceneDelegate.swift in Sources */,
 				B1107032277095FB00D6EAA7 /* PatientPortalViewController.swift in Sources */,
 				B1F8F369277335F8005245F3 /* ToDoView.swift in Sources */,
@@ -567,6 +583,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B1F0A81A277F53670009AE45 /* ToDo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B1F0A81B277F53670009AE45 /* ToDo.xcdatamodel */,
+			);
+			currentVersion = B1F0A81B277F53670009AE45 /* ToDo.xcdatamodel */;
+			path = ToDo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B110700127704E5B00D6EAA7 /* Project object */;
 }

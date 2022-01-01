@@ -106,8 +106,8 @@ class ToDoView: UIView {
         
         titleLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(16)
-            make.trailing.equalToSuperview().offset(-16)
-            make.top.greaterThanOrEqualToSuperview().offset(16)
+            make.trailing.equalTo(calendarImageView.snp.leading).offset(-16)
+            make.top.equalToSuperview().offset(16).priority(.medium)
             make.bottom.greaterThanOrEqualToSuperview().offset(-16)
         }
         

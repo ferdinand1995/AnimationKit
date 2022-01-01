@@ -64,8 +64,12 @@ extension ToDoVC: UITableViewDataSource, UITableViewDelegate {
      */
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell1", for: indexPath)
-        cell.textLabel?.text = "Hello World cell: \(indexPath.row)"
+        let cell = tableView.dequeueReusableCell(withClass: ToDoCell.self, for: indexPath)
+        let itemRow: String = String(indexPath.row)
+        cell.titleLabel.text = "Title cell: " + itemRow
+        cell.subTitleLabel.text = "Sub Title cell: " + itemRow
+        let timeString: String = String(Date().hour) + " : " + String(Date().minute)
+        cell.timeLabel.text = timeString
         return cell
     }
     

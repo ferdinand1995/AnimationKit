@@ -48,7 +48,7 @@ class ToDoVC: UIViewController {
         toDoView?.tableView.delegate = self
         toDoView?.tableView.dataSource = self
         self.view.addSubview(toDoView ?? UIView())
-        toDoView?.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "TableViewCell1")
+        toDoView?.tableView.register(cellWithClass: ToDoCell.self)
     }
     
     // MARK: Animation Header

@@ -1,14 +1,17 @@
 [
-  {
-    "title": "Table View",
-    "type": "vertical"
-  },
-  {
-    "title": "To Do",
-    "type": "vertical"
-  },
-  {
-    "title": "Hacker News",
-    "type": "vertical"
-  }
+    {
+        "title": "Table View",
+        "type": "vertical",
+        "ref": 0
+    },
+    {
+        "title": "To Do",
+        "type": "vertical",
+        "ref": 1
+    },
+    {
+        "title": "Hacker News",
+        "type": "vertical",
+        "ref": 2
+    }
 ]
