@@ -17,7 +17,7 @@ struct MainMenuElement: Codable {
 typealias MainMenu = [MainMenuElement]
 
 class MainVC: UICollectionViewController {
-
+    
     var data = [Any]()
 
     override func viewDidLoad() {
@@ -67,6 +67,10 @@ class MainVC: UICollectionViewController {
                     self.navigationController?.pushViewController(ToDoVC(), animated: true)
                 case 2:
                     self.navigationController?.pushViewController(HackerNewsVC(), animated: true)
+                case 4:
+                    let storyboard = UIStoryboard(name: "Vegetable", bundle: nil)
+                    guard let controller = storyboard.instantiateViewController(withIdentifier: String(describing: EatMoreVegetableVC.self)) as? EatMoreVegetableVC else { return }
+                    self.navigationController?.pushViewController(controller, animated: true)
                 default:
                     break
                 }

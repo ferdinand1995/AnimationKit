@@ -13,5 +13,10 @@
         "title": "Hacker News",
         "type": "vertical",
         "ref": 2
+    },
+    {
+        "title": "Show Custom Options Menu",
+        "type": "vertical",
+        "ref": 4
     }
 ]
